@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html>
+<head>
+	
+	<title>Google</title>
+<style>
+body{
+	margin: 0;
+	padding: 0;
+	box-sizing:  border-box;
+}
+.navbar{
+	display: flex;
+	margin-top: 20px;
+	justify-content: flex-end;
+	align-items: center;
+}
+.navbar li{
+	list-style: none;
+	margin:0px 5px;
+}
+.navbar li a{
+	text-decoration: none;
+	font-family: 'Helvetica';
+	color:black;
+	font-size: 12px;
+	padding: 4px 0;
+}
+.navbar li a i{
+	color:gray;
+	font-size: 18px;
+	margin: 0 5px;
+}
+.bi-person{
+	font-size: 30px;
+	padding: 5px;
+	border-radius:50%;
+	border: 1px solid black;
+	margin-right: auto;
+}
+main{
+	width: 100%;
+	overflow-x: hidden;
+	height: 100%;
+	margin-top: 100px;
+}
+.logo{	
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.languages{
+	width: 100%;
+	margin-top: 50px;
+	display: flex;
+	justify-content: center;
+}
+.languages li{
+	list-style: none;
+	padding:5px;
+}
+.languages li:nth-child(1)
+{
+	margin-left: -21%;
+	color:black;
+	font-size: 13px;
+	font-style: normal;
+	font-family: 'Helvetica';
+}
+.languages li a{
+	color:blue;
+	font-size: 13px;
+	font-style: normal;
+	text-decoration: none;
+}
+form{
+	display: block;
+	width: 50%;
+	margin-left: 27%;
+}
+input{
+	width: 70%;
+	height: 40px;
+	border: 1px solid darkgrey;
+	border-radius: 24px;	
+	margin: 30px 0;
+	padding: 0 8%;
+	font-size: 18px;
+	font-weight: 200;
+
+}
+.bi-search{
+	color: darkgrey;
+	position: relative;
+	width: 20px;
+	right: -6%;
+}
+.buttons{
+	display: flex;
+	justify-content: center;
+	width: 100%;
+	
+}
+.btn{
+	height: 40px;
+	margin: 5px 16px;
+	font-size: 14px;
+	background-color: #f2f2f2;
+	border: none;
+	cursor: pointer;
+	padding: 0 15px;
+	width: auto;
+	display: inline-block;
+	}
+	.info{
+		margin-top: 10%;
+		display: flex;
+		margin-bottom:0px;
+		justify-content: space-between;
+		height: 40px;
+		background: #f2f2f2;
+		
+	}
+	.privacy,
+	.services
+	{
+		display:flex;
+		justify-content: flex-start;
+	}
+	.services li,
+	.privacy li
+	{
+		list-style: none;
+		margin: 0 10px; 
+	}
+	.services li a,
+	.privacy li a{
+		font-family: 'Helvetica';
+		font-style: normal;
+		font-size: 14px;
+		color:black;
+		padding: 5px 10px 5px 0;
+	}
+	input:hover{
+		transform: scaleY(1.0);
+		box-shadow: 0px 0px 20px 10px #f2f2f2;
+		
+	}
+</style>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+</head>
+<body>
+	<header>
+		<nav>
+			<ul class="navbar">
+				<li><a href="#">Gmail</a></li>		
+				<li><a href="#">Images</a></li>		
+				<li><a href="" ><i class="bi bi-grid-3x3-gap-fill"></i></i></a></li>
+				<li><a href="#"><i class="bi bi-person"></i></i></a>	</li>	
+		</nav>
+	</header>
+	<main>
+		<div class="logo">
+			<img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="" >
+	</div>
+		<form>
+			<div class="search">
+				<i><i class="bi bi-search"></i>
+				<input type="text" name="search" />
+			</div>
+			<div class="buttons">
+			<button class="btn">Google Search</button>
+			<button class="btn">I'm Feeling Lucky</button>
+			</div>
+		</form>
+		</div>
+		<ul class="languages">
+			<li>Google Offered in:</li>
+			<li><a href="#">हिन्दी</a></li>
+			<li><a href="#">বাংলা</a></li>
+			<li><a href="#">తెలుగు</a></li>
+			<li><a href="#">मराठी</a></li>
+			<li><a href="#">தமிழ்</a></li>
+			<li><a href="#">ગુજરાતી</a></li>
+			<li><a href="#">ಕನ್ನಡ</a></li>
+			<li><a href="#">മലയാളം</a></li>
+			<li><a href="#">ਪੰਜਾਬੀ</a></li>
+		</ul>
+	</main>
+	<footer>	
+		<div class="info">
+			<ul class="services">
+				<li><a>Advertising</a></li>		
+				<li><a>Business</a></li>		
+				<li><a>About</a></li>		
+				<li><a>How Search Works</a></li>		
+			</ul>
+			
+			<ul class="privacy">
+				<li><a>Privacy</a></li>			
+				<li><a>Terms</a></li>			
+				<li><a>Settings</a></li>			
+			</ul>
+		</div>
+	</footer>
+</body>
+</html>
